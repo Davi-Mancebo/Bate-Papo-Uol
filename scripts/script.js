@@ -35,7 +35,7 @@ function usuarioNovo(){
 
 }
 
-function usuarioLogado(){
+function usuarioLogado(){zas
     usuario = prompt("usuario já existe, tente com um nome diferente!");
     login();
 }
@@ -71,7 +71,7 @@ function imprimeMensagens(response){
         </div>
         `;
         }
-        else{
+        else if(response.data[i].to === usuario || response.data[i].from === usuario){
             mainHtml.innerHTML += `
             <div class="message private message${i}">
                 <p>
